@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76E33EFF-4F68-4C8B-A07A-F5F61AFA1E7D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>httpd</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\contrib;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\node;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\src;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\apouche;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\httpd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\contrib;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\node;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\src;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\apouche;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\httpd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\contrib;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\node;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\src;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\apouche;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\httpd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\contrib;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include\yaml-cpp\node;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\src;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\yaml\include;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\submodules\apouche;C:\Users\alexa\Documents\Visual Studio 2017\Projects\httpd\httpd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\api\FileLogger.cpp" />
+    <ClCompile Include="src\api\HttpConf.cpp" />
+    <ClCompile Include="src\api\HttpRequest.cpp" />
+    <ClCompile Include="src\api\HttpResponse.cpp" />
+    <ClCompile Include="src\api\Logger.cpp" />
+    <ClCompile Include="src\exception\custom_exception.cpp" />
+    <ClCompile Include="src\exception\socket_exception.cpp" />
+    <ClCompile Include="src\exception\thread_exception.cpp" />
+    <ClCompile Include="src\httpd.cpp" />
+    <ClCompile Include="src\httpEngine\Engine.cpp" />
+    <ClCompile Include="src\httpEngine\Grammar.cpp" />
+    <ClCompile Include="src\httpEngine\Methods\Get.cpp" />
+    <ClCompile Include="src\httpEngine\Methods\Head.cpp" />
+    <ClCompile Include="src\httpEngine\Request.cpp" />
+    <ClCompile Include="src\httpEngine\Response.cpp" />
+    <ClCompile Include="src\io\ioReader.cpp" />
+    <ClCompile Include="src\io\ioWriter.cpp" />
+    <ClCompile Include="src\network\SocketWindows.cpp" />
+    <ClCompile Include="src\parser\ModuleChargerWindows.cpp" />
+    <ClCompile Include="src\parser\YamlParser.cpp" />
+    <ClCompile Include="src\server\HttpServerWindows.cpp" />
+    <ClCompile Include="src\threadPool\ThreadDelegator.cpp" />
+    <ClCompile Include="src\threadPool\ThreadGuard.cpp" />
+    <ClCompile Include="src\utils\Converter.cpp" />
+    <ClCompile Include="src\utils\FolderView.cpp" />
+    <ClCompile Include="src\utils\Splitter.cpp" />
+    <ClCompile Include="src\utils\String.cpp" />
+    <ClCompile Include="src\utils\Trimmer.cpp" />
+    <ClCompile Include="src\utils\Uri.cpp" />
+    <ClCompile Include="src\worker\Worker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\api\FileLogger.hh" />
+    <ClInclude Include="include\api\HttpConf.h" />
+    <ClInclude Include="include\api\HttpRequest.hpp" />
+    <ClInclude Include="include\api\HttpResponse.hpp" />
+    <ClInclude Include="include\api\Logger.hh" />
+    <ClInclude Include="include\api\Utils.hh" />
+    <ClInclude Include="include\cache\LRUCache.hpp" />
+    <ClInclude Include="include\exception\cache_exception.hh" />
+    <ClInclude Include="include\exception\conf_exception.hh" />
+    <ClInclude Include="include\exception\custom_exception.hh" />
+    <ClInclude Include="include\exception\http_exception.hh" />
+    <ClInclude Include="include\exception\io_exception.hh" />
+    <ClInclude Include="include\exception\socket_exception.hh" />
+    <ClInclude Include="include\exception\splitter_exception.hh" />
+    <ClInclude Include="include\exception\thread_exception.hh" />
+    <ClInclude Include="include\httpd.hh" />
+    <ClInclude Include="include\httpEngine\Engine.hh" />
+    <ClInclude Include="include\httpEngine\Grammar.hh" />
+    <ClInclude Include="include\httpEngine\Request.hh" />
+    <ClInclude Include="include\httpEngine\Response.hh" />
+    <ClInclude Include="include\httpEngine\Uri.hh" />
+    <ClInclude Include="include\io\ioReader.hh" />
+    <ClInclude Include="include\io\ioWriter.hh" />
+    <ClInclude Include="include\network\ISocket.h" />
+    <ClInclude Include="include\network\SocketUnix.h" />
+    <ClInclude Include="include\network\SocketWindows.h" />
+    <ClInclude Include="include\parser\YamlParser.hpp" />
+    <ClInclude Include="include\server\HttpServerUnix.hh" />
+    <ClInclude Include="include\server\HttpServerWindows.hh" />
+    <ClInclude Include="include\server\IHttpServer.hh" />
+    <ClInclude Include="include\system\dirent.h" />
+    <ClInclude Include="include\threadPool\SocketQueue.hpp" />
+    <ClInclude Include="include\threadPool\TaskQueue.hpp" />
+    <ClInclude Include="include\threadPool\ThreadDelegator.hh" />
+    <ClInclude Include="include\threadPool\ThreadGuard.hh" />
+    <ClInclude Include="include\utils\Converter.hh" />
+    <ClInclude Include="include\utils\DateTime.hh" />
+    <ClInclude Include="include\utils\ForlderView.hh" />
+    <ClInclude Include="include\utils\Splitter.hh" />
+    <ClInclude Include="include\utils\String.hh" />
+    <ClInclude Include="include\utils\Trimmer.hh" />
+    <ClInclude Include="include\utils\Uri.hh" />
+    <ClInclude Include="include\worker\Worker.hh" />
+    <ClInclude Include="include\worker\WorkerManager.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

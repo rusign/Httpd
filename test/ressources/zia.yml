@@ -1,0 +1,49 @@
+server:
+    port: 8080
+    log:
+      file: server.log
+      stacktrace: true
+    modules:
+#        network:
+#            port: 443
+#            path: SSL_MODULE_PATH
+        treatment:
+#            - PHP_MODULE_PATH
+ #           - /home/alexandre/Projects/httpd/test/ressources/libphp-cgi.so
+
+sites:
+#    trucmuche.com:
+#        php-cgi:
+#            cgi-path: ABSOLUTE_CGI_PATH
+#        ssl:
+#            ssl-cert: ABSOLUTE_CERT_PATH
+#            ssl-key: ABSOLUTE_KEY_PATH
+#            ssl-ca-cert: ABSOLUTE_CA_CERT
+#            ssl-ca-path: ABSOLUTE_CA_PATH
+#
+#        base-location:
+#            -
+#                url: /
+#                modules:
+#                    - php
+
+#        net-location:
+#            -
+#                url: /
+#                directory: /usr/share/www/
+#            -
+#                url: /my_files
+#                directory: /usr/share/files/
+    localhost:
+        directory: "/home/alexandre/Projects/httpd/"
+        folderview: true
+
+    '*':
+        folderview: true
+        php-cgi:
+            cgi-path: /usr/bin/php-cgi
+#            cgi-path: /usr/bin/bash
+        directory: "/home/alexandre/"
+#        base-location:
+#            -
+#                path: /lol

@@ -1,0 +1,6 @@
+[submodule "submodules/apouche"]
+	path = submodules/apouche
+	url = https://github.com/ApoucheZia/zia.git
+[submodule "submodules/yaml"]
+	path = submodules/yaml
+	url = https://github.com/jbeder/yaml-cpp.git
